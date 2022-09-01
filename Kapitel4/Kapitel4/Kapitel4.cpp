@@ -1,5 +1,21 @@
 #include <iostream>
 
+
+
+int main() {
+
+    std::cout << 5.0 << '\n';
+    std::cout << 6.002f << '\n';
+    std::cout << 6525145.241 << '\n';
+    std::cout << 5.0f << '\n';
+
+    return 0;
+}
+
+
+
+
+/*        chapter 4.1
 int main()
 {
     std::cout << "bool:\t\t" << sizeof(bool) << " bytes\n";
@@ -16,4 +32,4 @@ int main()
     std::cout << "long double:\t" << sizeof(long double) << " bytes\n";
 
     return 0;
-}
+}*/
