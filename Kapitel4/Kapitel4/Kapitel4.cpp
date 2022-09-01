@@ -1,7 +1,89 @@
 #include <iostream>
 
+int enterInteger() {
+    std::cout << "enter an integer between 0 and 9: ";
+    int x{};
+    std::cin >> x;
+
+    return x;
+}
 
 
+int main() {
+    
+    int x{ enterInteger() };
+
+    if (x == 2)
+        std::cout << "The digit is prime";
+    else if (x == 3)
+        std::cout << "The digit is prime";
+    else if (x == 5)
+        std::cout << "The digit is prime";
+    else if (x == 7)
+        std::cout << "The digit is prime";
+    else
+        std::cout << "The digit is not prime";
+
+
+    return 0;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+int enterInteger() {
+    std::cout << "enter an integer: ";
+    int x{};
+    std::cin >> x;
+
+    return x;
+}
+
+bool isEqual(int x, int y) {
+    return x == y;
+}
+
+
+int main() {
+
+    int x{ enterInteger() };
+    int y{ enterInteger() };
+
+
+    std::cout << std::boolalpha;
+
+    
+    if (isEqual(x,y)) {
+        std::cout << x << " and " << y << " are equal\n";
+    }
+    else
+    {
+
+        std::cout << x << " and " << y << " aren't equal\n";
+    }
+    
+}
+
+*/
+
+/*
 int main() {
 
     std::cout << 5.0 << '\n';
@@ -11,7 +93,7 @@ int main() {
 
     return 0;
 }
-
+*/
 
 
 
