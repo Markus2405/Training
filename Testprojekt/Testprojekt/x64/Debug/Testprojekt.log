@@ -1,0 +1,4 @@
+﻿  Testprojekt.cpp
+C:\Users\u19a94\source\repos\Testprojekt\Testprojekt\Testprojekt.cpp(20,16): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+C:\Users\u19a94\source\repos\Testprojekt\Testprojekt\Testprojekt.cpp(21,16): warning C4244: "=": Konvertierung von "int" in "float", möglicher Datenverlust
+  Testprojekt.vcxproj -> C:\Users\u19a94\source\repos\Testprojekt\x64\Debug\Testprojekt.exe

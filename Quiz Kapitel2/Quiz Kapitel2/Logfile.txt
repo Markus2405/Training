@@ -1,0 +1,4 @@
+﻿2022-08-31 12:58:22.051 DEBUG [12988] [main@11] main() called
+2022-08-31 12:58:42.296 DEBUG [12988] [readNumber@11] readNumber() called
+2022-08-31 12:58:57.900 DEBUG [12988] [readNumber@11] readNumber() called
+2022-08-31 12:59:50.190 DEBUG [12988] [writeAnswer@21] writeAnswer() called
