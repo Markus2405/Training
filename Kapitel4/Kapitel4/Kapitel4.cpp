@@ -1,5 +1,24 @@
 #include <iostream>
 
+void print(int x) {
+    std::cout << x;
+}
+
+int main() {
+    
+    std::cout << "Enter a single character: ";
+    char ch{};
+    std::cin >> ch;
+    std::cout << "You entered '" << ch << "', which has ASCII code " << static_cast<int>(ch);
+
+//    print(static_cast<int>(5.4));
+    return 0;
+}
+
+
+
+/*
+
 int enterInteger() {
     std::cout << "enter an integer between 0 and 9: ";
     int x{};
@@ -28,25 +47,7 @@ int main() {
     return 0;
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+*/
 /*
 int enterInteger() {
     std::cout << "enter an integer: ";
