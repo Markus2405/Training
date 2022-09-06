@@ -1,5 +1,10 @@
 #include <iostream>
 
+
+
+
+
+/*
 void print(int x) {
     std::cout << x;
 }
@@ -15,7 +20,7 @@ int main() {
     return 0;
 }
 
-
+*/
 
 /*
 
