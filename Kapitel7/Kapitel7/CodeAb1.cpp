@@ -357,7 +357,6 @@ bool isPrime(int x) {
 		return false;
 
 }
-
 void primeNumbers() {
 	assert(!isPrime(0));
 	assert(!isPrime(1));
@@ -380,3 +379,83 @@ void primeNumbers() {
 
 	std::cout << "Success!\n";
 }
+
+//7 Quiz 3
+int randomNumber() {
+	std::random_device rd;
+	std::seed_seq ss{ rd(), rd(), rd(), rd(), rd(), rd(),rd(),rd() };
+	std::mt19937 mt{ ss };
+	std::uniform_int_distribution die100{ 1,100 };
+
+	return die100(mt);
+}
+
+void hiLoGame(int randomInt) {
+	std::cout << "Let's play a game. I'm thinking of a number between 1 and 100. You have 7 tries to guess what it is!\n";
+	do {
+		int guess{ 0 };
+		for (int i = 1; i <= 7; ++i) {
+			std::cout << "Guess #" << i << ':';
+			guess = guessInput();
+			
+			if (guess < randomInt)
+				std::cout << "Your guess is too low.\n";
+			else if (guess > randomInt)
+				std::cout << "Your guess is too high.\n";
+			
+			else if (guess==randomInt) {				
+				std::cout << "Correct! You win!\n";
+				break;
+			}
+			if (i >= 7) {
+				std::cout << "Sorry you lose. The correct number was " << randomInt << ".\n";
+			}
+		}
+	}
+	while (playAgain());
+	std::cout << "Thank you for playing.";
+}
+
+bool playAgain() {
+	char playAgain{};
+	while (true) {
+		std::cout << "Would you like to play again (y/n)? ";
+		std::cin >> playAgain;
+		if (playAgain == 'y') {
+			ignoreLine();
+			return true;
+		}
+		else if (playAgain == 'n') {
+			ignoreLine();
+			return false;
+		}
+		else {
+			std::cin.clear();
+			ignoreLine();
+		}
+	}
+}
+
+int guessInput() {
+	int guess{ 0 };
+	while (true) {
+		std::cin >> guess;
+		if (!std::cin) {
+			std::cin.clear();
+			ignoreLine();
+			std::cerr << "Invalid input. Try again. \n";
+		}
+		else if (guess < 1)
+			std::cout << "Input to low. Enter a number between 1 and 100!";
+		else if (guess > 100)
+			std::cout << "Input to high. Enter a number between 1 and 100!"; 
+		else {
+			std::cin.clear();
+			ignoreLine();
+			return guess;
+		}
+	}
+
+}
+
+

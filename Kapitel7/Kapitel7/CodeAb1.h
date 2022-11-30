@@ -48,6 +48,11 @@ void fallTime();
 //7 Quiz 2
 bool isPrime(int x);
 void primeNumbers();
+//7 Quiz 3
+int randomNumber();
+bool playAgain();
+void hiLoGame(int randomInt);
+int guessInput();
 
 
 #endif

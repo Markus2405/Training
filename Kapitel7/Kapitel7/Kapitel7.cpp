@@ -38,7 +38,10 @@ int main() {
 	//fallTime();
 
 //7 Quiz 2
-	primeNumbers();
+	//primeNumbers();
+
+//7 Quiz 3
+	hiLoGame(randomNumber());
 
 
 	return 0;
