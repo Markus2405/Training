@@ -40,7 +40,7 @@ int main() {
 //7 Quiz 2
 	//primeNumbers();
 
-//7 Quiz 3
+//7 Quiz 3 und 4
 	hiLoGame(randomNumber());
 
 

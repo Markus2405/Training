@@ -48,7 +48,7 @@ void fallTime();
 //7 Quiz 2
 bool isPrime(int x);
 void primeNumbers();
-//7 Quiz 3
+//7 Quiz 3 und 4
 int randomNumber();
 bool playAgain();
 void hiLoGame(int randomInt);

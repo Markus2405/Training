@@ -380,7 +380,7 @@ void primeNumbers() {
 	std::cout << "Success!\n";
 }
 
-//7 Quiz 3
+//7 Quiz 3 und 4
 int randomNumber() {
 	std::random_device rd;
 	std::seed_seq ss{ rd(), rd(), rd(), rd(), rd(), rd(),rd(),rd() };
